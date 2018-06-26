@@ -30,28 +30,12 @@ public class WeatherWindow {
 	//Loop through and add to pane
 		int start = 250;
 		weatherPanel.setLayout(null);
+		
 		for (int i=0;i<Labels.size();i++) {
 			weatherPanel.add(Labels.get(i));
 			Labels.get(i).setLocation(160,250+i*25);
 			Labels.get(i).setSize(200,20);
 		}
-		/*
-		weatherPanel.add(Labels.get(0));
-		weatherPanel.add(Labels.get(1));
-		weatherPanel.add(Labels.get(2));
-		weatherPanel.add(Labels.get(3));
-
-		
-		Labels.get(0).setLocation(160, 250);
-		Labels.get(1).setLocation(160, 275);
-		Labels.get(2).setLocation(160, 300);
-		Labels.get(3).setLocation(160, 325);
-		
-		Labels.get(0).setSize(200,20);
-		Labels.get(1).setSize(200,20);
-		Labels.get(2).setSize(200,20);
-		Labels.get(3).setSize(200,20);
-		*/
 		
 		weatherFrame.getContentPane().add(weatherPanel);
 		
