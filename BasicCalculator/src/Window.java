@@ -71,7 +71,6 @@ public class Window extends JFrame {
 	
 	private class PrintNumToDisplay implements ActionListener {
 		private String str;
-		private Boolean startclick = true; //The very first click
 		
 		public PrintNumToDisplay(String str) {
 			this.str = str;
